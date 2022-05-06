@@ -2,11 +2,7 @@ package org.denizbabayaka.PageComponents;
 
 import org.denizbabayaka.AbstractComponents.AbstractComponent;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 public class FooterNav extends AbstractComponent {
     WebDriver driver;
@@ -25,15 +21,15 @@ public class FooterNav extends AbstractComponent {
     //should be in the footer only1
 
 
-    public void getFlightAttribute()
+    public String getFlightAttribute()
     {
         //driver.findElement(flights).click();
         //findElement method is coming from abstract class and we pass flights argument
-        System.out.println(findElement(flights).getAttribute("class"));
+        return findElement(flights).getAttribute("class");
     }
 
-    public void getAnchorCount() {
-        System.out.println("Footer Link size :" +findElements(Links).size());
+    public int getAnchorCount() {
+        return findElements(Links).size();
     }
 
 

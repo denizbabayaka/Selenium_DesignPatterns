@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.denizbabayaka.PageObjects.TravelHomePage;
 import org.testng.annotations.Test;
 public class DemoTest {
+    //SRP(Single responsibility principle Design Pattern)
     @Test
     public void flightTest() {
         System.setProperty("webdriver.chrome.driver", "C://Users//deniz//OneDrive//Desktop//Selenium-Grid//chromedriver.exe");
@@ -15,10 +16,10 @@ public class DemoTest {
         TravelHomePage travelHomePage = new TravelHomePage(driver);
 
         travelHomePage.goTo();
-        travelHomePage.getFooterNav().getFlightAttribute();
-        travelHomePage.getNavigationBar().getFlightAttribute();
-        travelHomePage.getNavigationBar().getAnchorCount();
-        travelHomePage.getFooterNav().getAnchorCount();
+        System.out.println(travelHomePage.getFooterNav().getFlightAttribute());
+        System.out.println(travelHomePage.getNavigationBar().getFlightAttribute());
+        System.out.println(travelHomePage.getNavigationBar().getAnchorCount());
+        System.out.println(travelHomePage.getFooterNav().getAnchorCount());
         driver.close();
 
         //driver.findElement(By.id("traveller-home).findElement(By.cssSelector("[title='Flights']")

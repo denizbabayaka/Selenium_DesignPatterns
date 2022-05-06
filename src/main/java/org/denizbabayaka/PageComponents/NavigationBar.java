@@ -18,16 +18,16 @@ import org.openqa.selenium.WebDriver;
      }
 
 
-     public void getFlightAttribute()
+     public String getFlightAttribute()
     {
         //driver.findElement(flights).click();
         //findElement method is coming from abstract class and we pass flights argument
-        System.out.println(findElement(flights).getAttribute("class"));
+        return findElement(flights).getAttribute("class");
     }
 
-     public void getAnchorCount() {
+     public int  getAnchorCount() {
 
-         System.out.println("Navigation Link size :" +findElements(Links).size());
+         return findElements(Links).size();
      }
 
 }
