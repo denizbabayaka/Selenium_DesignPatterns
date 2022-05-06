@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 
 public class TravelHomePage {
 
+    //We define all  main locators in this class
     By sectionElement=By.id("traveller-home");
     By navigationHome= By.id("buttons");
     WebDriver driver;

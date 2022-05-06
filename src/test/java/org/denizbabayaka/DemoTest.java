@@ -15,8 +15,11 @@ public class DemoTest {
         TravelHomePage travelHomePage = new TravelHomePage(driver);
 
         travelHomePage.goTo();
-        travelHomePage.getFooterNav().selectFlight();
-        travelHomePage.getNavigationBar().selectFlight();
+        travelHomePage.getFooterNav().getFlightAttribute();
+        travelHomePage.getNavigationBar().getFlightAttribute();
+        travelHomePage.getNavigationBar().getAnchorCount();
+        travelHomePage.getFooterNav().getAnchorCount();
+        driver.close();
 
         //driver.findElement(By.id("traveller-home).findElement(By.cssSelector("[title='Flights']")
 
