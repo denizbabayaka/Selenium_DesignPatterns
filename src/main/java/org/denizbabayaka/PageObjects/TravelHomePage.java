@@ -16,8 +16,7 @@ public class TravelHomePage {
     By navigationHome= By.id("buttons");
     WebDriver driver;
     SearchFlightAvail searchFlightAvail;
-    int classs_count=2;
-    Object run_object=null;
+
 
 
     public TravelHomePage(WebDriver driver) {
